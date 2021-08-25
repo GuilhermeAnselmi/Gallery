@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Pages.Navigation.NavigationTwo"
+             Title="Navigation Page Two">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Navigation 2"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Page Tree" Clicked="PageTree" />
+            <Button Text="Done" Clicked="Done" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:local="clr-namespace:Gallery.XamarinForms.Pages.Carousel"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Pages.Carousel.Carousel">
+    <local:ContentTwo />
+    <local:ContentTree />
+</CarouselPage>

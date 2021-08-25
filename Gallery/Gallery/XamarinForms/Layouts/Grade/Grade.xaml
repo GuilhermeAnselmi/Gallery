@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Layouts.Grade.Grade">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Gray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0" Grid.ColumnSpan="4" Background="#121212">
+                
+            </StackLayout>
+            
+            <!--0-->
+            <Label Text="8 X 5 = 40" TextColor="White" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="0" Grid.ColumnSpan="4" Margin="15" FontSize="50" />
+
+            <!--1-->
+            <Button Text="C" Grid.Row="1" Grid.Column="0" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="+/-" Grid.Row="1" Grid.Column="1" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="%" Grid.Row="1" Grid.Column="2" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="/" Grid.Row="1" Grid.Column="3" BackgroundColor="#FB8C0D" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+
+            <!--2-->
+            <Button Text="7" Grid.Row="2" Grid.Column="0" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="8" Grid.Row="2" Grid.Column="1" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="9" Grid.Row="2" Grid.Column="2" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="X" Grid.Row="2" Grid.Column="3" BackgroundColor="#FB8C0D" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            
+            <!--3-->
+            <Button Text="4" Grid.Row="3" Grid.Column="0" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="5" Grid.Row="3" Grid.Column="1" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="6" Grid.Row="3" Grid.Column="2" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="-" Grid.Row="3" Grid.Column="3" BackgroundColor="#FB8C0D" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            
+            <!--4-->
+            <Button Text="1" Grid.Row="4" Grid.Column="0" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="2" Grid.Row="4" Grid.Column="1" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="3" Grid.Row="4" Grid.Column="2" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="+" Grid.Row="4" Grid.Column="3" BackgroundColor="#FB8C0D" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            
+            <!--5-->
+            <Button Text="0" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="." Grid.Row="5" Grid.Column="2" BackgroundColor="#C9CACD" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+            <Button Text="=" Grid.Row="5" Grid.Column="3" BackgroundColor="#FB8C0D" TextColor="Black" FontSize="30" FontAttributes="Bold" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
