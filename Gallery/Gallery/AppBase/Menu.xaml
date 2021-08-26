@@ -18,6 +18,8 @@
                 <Button Text="Stack Layout" Clicked="OpenStack" />
                 <Button Text="Grid Layout" Clicked="OpenGrid" />
                 <Button Text="Absolut Layout" Clicked="OpenAbsolut" />
+                <Button Text="Relative Layout" Clicked="OpenRelative" />
+                <Button Text="Flex Layout" Clicked="OpenFlex" />
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

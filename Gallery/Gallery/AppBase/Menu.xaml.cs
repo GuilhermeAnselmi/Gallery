@@ -70,5 +70,17 @@ namespace Gallery.AppBase
             ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Absolut.Absolut();
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
+
+        private void OpenRelative(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Relative.Relative();
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenFlex(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Flex.Flex();
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
     }
 }
