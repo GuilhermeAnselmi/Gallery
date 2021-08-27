@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:Control="clr-namespace:Gallery.XamarinForms.Layouts.Cont"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Layouts.Cont.Cont">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout BackgroundColor="Black" Padding="20">
+                <Label Text="Title" TextColor="White" FontSize="36" />
+                <Label Text="This content in the page this Content View" TextColor="White" FontSize="18" />
+            </StackLayout>
+            <Control:CardH Title="Teste 1" Text="Teste de conteudo 01" ColorB="Blue" />
+            <Control:CardH Title="Teste 2" Text="Teste de conteudo 02" ColorB="Green" />
+            <Control:CardH Title="Teste 3" Text="Teste de conteudo 03" ColorB="Purple" />
+            <Control:CardAuthor Name="Guilherme" Descr="Desenvolvedor" BoxViewColor="Orange" />
+            <Control:CardAuthor Name="Gabrielle" Descr="Atenente" BoxViewColor="Yellow" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

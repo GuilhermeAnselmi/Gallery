@@ -5,22 +5,26 @@
              x:Class="Gallery.AppBase.Menu">
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
-            <StackLayout>
-                <Label Text="Pages" />
-                <Button Text="Content Page" Clicked="OpenContent" />
-                <Button Text="Navigation Page" Clicked="OpenNavigate" />
-                <Button Text="Carousel Page" Clicked="OpenCarousel" />
-                <Button Text="Tabbed Page" Clicked="OpenTabbed" />
-                <Button Text="Master Detail Page" Clicked="OpenMaster" />
-                <Button Text="Modal" Clicked="OpenModal" />
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Pages" />
+                    <Button Text="Content Page" Clicked="OpenContent" />
+                    <Button Text="Navigation Page" Clicked="OpenNavigate" />
+                    <Button Text="Carousel Page" Clicked="OpenCarousel" />
+                    <Button Text="Tabbed Page" Clicked="OpenTabbed" />
+                    <Button Text="Master Detail Page" Clicked="OpenMaster" />
+                    <Button Text="Modal" Clicked="OpenModal" />
 
-                <Label Text="Layouts" />
-                <Button Text="Stack Layout" Clicked="OpenStack" />
-                <Button Text="Grid Layout" Clicked="OpenGrid" />
-                <Button Text="Absolut Layout" Clicked="OpenAbsolut" />
-                <Button Text="Relative Layout" Clicked="OpenRelative" />
-                <Button Text="Flex Layout" Clicked="OpenFlex" />
-            </StackLayout>
+                    <Label Text="Layouts" />
+                    <Button Text="Stack Layout" Clicked="OpenStack" />
+                    <Button Text="Grid Layout" Clicked="OpenGrid" />
+                    <Button Text="Absolut Layout" Clicked="OpenAbsolut" />
+                    <Button Text="Relative Layout" Clicked="OpenRelative" />
+                    <Button Text="Flex Layout" Clicked="OpenFlex" />
+                    <Button Text="Scroll Layout" Clicked="OpenScroll" />
+                    <Button Text="ContentV Layout" Clicked="OpenContentV" />
+                </StackLayout>
+            </ScrollView>
         </ContentPage>
     </MasterDetailPage.Master>
 

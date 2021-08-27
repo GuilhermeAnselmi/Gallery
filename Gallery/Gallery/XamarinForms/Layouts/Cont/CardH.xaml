@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Layouts.Cont.CardH">
+    <ContentView.Content>
+        <StackLayout x:Name="Card" BackgroundColor="Black" Padding="20">
+            <Label x:Name="CardTitle" Text="Title" TextColor="White" FontSize="36" />
+            <Label x:Name="CardText" Text="This content in the page this Content View" TextColor="White" FontSize="18" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
