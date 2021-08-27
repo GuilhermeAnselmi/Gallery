@@ -94,5 +94,23 @@ namespace Gallery.AppBase
             ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Cont.Cont();
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
+
+        private void OpenFraming(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Framing.Framing();
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenBox(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controls.Box.Box();
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenLbl(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controls.Lbl.Lbl();
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
     }
 }

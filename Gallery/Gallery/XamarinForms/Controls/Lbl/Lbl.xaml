@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Lbl.Lbl">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="FormattedText" TextColor="White" Margin="0, 30, 0, 0" />
+                <Label Text="Linha 1" TextColor="#ffffff">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Text " TextColor="Green" FontSize="12" />
+                            <Span Text="01" TextColor="Red" FontSize="14" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label Text="TextType" TextColor="White" Margin="0, 30, 0, 0" />
+                <Label Text="&lt;b&gt;Linha 1&lt;/b&gt;" TextColor="White" TextType="Html" />
+                <Label TextColor="White" TextType="Html">
+                    <![CDATA[
+                    <h1><a href="#">Linha 2</a></h1>
+                    ]]>
+                </Label>
+
+                <Label Text="TextColor" TextColor="White" Margin="0, 30, 0, 0" />
+                <Label Text="Linha 1" TextColor="#ffffff" />
+                <Label Text="F4 para properties" TextColor="#FF0000" />
+
+                <Label Text="TextDecorations" TextColor="White" TextDecorations="None" Margin="0, 30, 0, 0" />
+                <Label Text="Linha 1" TextColor="White" TextDecorations="Strikethrough" />
+                <Label Text="Linha 2" TextColor="White" TextDecorations="Underline" />
+
+                <Label Text="CharacterSpacing" TextColor="White" Margin="0, 30, 0, 0" />
+                <Label Text="Linha 1" TextColor="White" CharacterSpacing="10" />
+                <Label Text="Linha 2" TextColor="White" CharacterSpacing="-2" />
+
+                <Label Text="LineHeight" TextColor="White" Margin="0, 30, 0, 0" />
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui enim, hendrerit vitae nisi ac, mollis iaculis nisl. Nulla congue massa sed pharetra auctor. Sed fringilla lacinia sodales. Maecenas eu nisi in magna condimentum ornare nec eget nisl. Quisque sed tellus suscipit, vestibulum orci tempor, vulputate leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Sed maximus ipsum a lacus lobortis, id dignissim massa pulvinar." 
+                       TextColor="White" 
+                       MaxLines="3"
+                       LineHeight="1.5"/>
+
+                <Label Text="MaxLines" TextColor="White" Margin="0, 30, 0, 0" />
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui enim, hendrerit vitae nisi ac, mollis iaculis nisl. Nulla congue massa sed pharetra auctor. Sed fringilla lacinia sodales. Maecenas eu nisi in magna condimentum ornare nec eget nisl. Quisque sed tellus suscipit, vestibulum orci tempor, vulputate leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Sed maximus ipsum a lacus lobortis, id dignissim massa pulvinar." TextColor="White" MaxLines="3" />
+
+                <Label Text="LineBreakMode" TextColor="White" Margin="0, 30, 0, 0" />
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui enim, hendrerit vitae nisi ac, mollis iaculis nisl. Nulla congue massa sed pharetra auctor. Sed fringilla lacinia sodales. Maecenas eu nisi in magna condimentum ornare nec eget nisl. Quisque sed tellus suscipit, vestibulum orci tempor, vulputate leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Sed maximus ipsum a lacus lobortis, id dignissim massa pulvinar." TextColor="White" LineBreakMode="WordWrap" />
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui enim, hendrerit vitae nisi ac, mollis iaculis nisl. Nulla congue massa sed pharetra auctor. Sed fringilla lacinia sodales. Maecenas eu nisi in magna condimentum ornare nec eget nisl. Quisque sed tellus suscipit, vestibulum orci tempor, vulputate leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Sed maximus ipsum a lacus lobortis, id dignissim massa pulvinar." TextColor="Green" LineBreakMode="NoWrap" />
+                <Label Text="No android CharacterWrap não funciona" TextColor="White" LineBreakMode="CharacterWrap" />
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui enim, hendrerit vitae nisi ac, mollis iaculis nisl. Nulla congue massa sed pharetra auctor. Sed fringilla lacinia sodales. Maecenas eu nisi in magna condimentum ornare nec eget nisl. Quisque sed tellus suscipit, vestibulum orci tempor, vulputate leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Sed maximus ipsum a lacus lobortis, id dignissim massa pulvinar." TextColor="Green" LineBreakMode="HeadTruncation" />
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui enim, hendrerit vitae nisi ac, mollis iaculis nisl. Nulla congue massa sed pharetra auctor. Sed fringilla lacinia sodales. Maecenas eu nisi in magna condimentum ornare nec eget nisl. Quisque sed tellus suscipit, vestibulum orci tempor, vulputate leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Sed maximus ipsum a lacus lobortis, id dignissim massa pulvinar." TextColor="White" LineBreakMode="MiddleTruncation" />
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui enim, hendrerit vitae nisi ac, mollis iaculis nisl. Nulla congue massa sed pharetra auctor. Sed fringilla lacinia sodales. Maecenas eu nisi in magna condimentum ornare nec eget nisl. Quisque sed tellus suscipit, vestibulum orci tempor, vulputate leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Sed maximus ipsum a lacus lobortis, id dignissim massa pulvinar." TextColor="Green" LineBreakMode="TailTruncation" />
+
+                <!--Template Base-->
+                <Label Text="TextDecorations" TextColor="White" Margin="0, 30, 0, 0" />
+                <Label Text="Linha 1" TextColor="White" />
+                <Label Text="Linha 2" TextColor="White" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

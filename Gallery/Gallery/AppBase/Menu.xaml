@@ -23,6 +23,11 @@
                     <Button Text="Flex Layout" Clicked="OpenFlex" />
                     <Button Text="Scroll Layout" Clicked="OpenScroll" />
                     <Button Text="ContentV Layout" Clicked="OpenContentV" />
+                    <Button Text="Framing Layout" Clicked="OpenFraming" />
+
+                    <Label Text="Controls" />
+                    <Button Text="Box Control" Clicked="OpenBox" />
+                    <Button Text="Label Control" Clicked="OpenLbl" />
                 </StackLayout>
             </ScrollView>
         </ContentPage>
