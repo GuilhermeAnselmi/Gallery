@@ -31,85 +31,97 @@ namespace Gallery.AppBase
 
         private void OpenCarousel(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Pages.Carousel.Carousel();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Pages.Carousel.Carousel());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenTabbed(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Pages.Tabbed.TabbedOne();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Pages.Tabbed.TabbedOne());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenMaster(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Pages.Menu.LateralMenu();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Pages.Menu.LateralMenu());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenModal(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Pages.Modal.ContentOne();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Pages.Modal.ContentOne());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenStack(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Stack.Stack();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Layouts.Stack.Stack());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenGrid(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Grade.Grade();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Layouts.Grade.Grade());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenAbsolut(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Absolut.Absolut();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Layouts.Absolut.Absolut());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenRelative(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Relative.Relative();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Layouts.Relative.Relative());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenFlex(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Flex.Flex();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Layouts.Flex.Flex());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenScroll(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Scroll.Scroll();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Layouts.Scroll.Scroll());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenContentV(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Cont.Cont();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Layouts.Cont.Cont());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenFraming(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Layouts.Framing.Framing();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Layouts.Framing.Framing());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenBox(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controls.Box.Box();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Box.Box());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
         private void OpenLbl(object sender, EventArgs e)
         {
-            ((MasterDetailPage)App.Current.MainPage).Detail = new XamarinForms.Controls.Lbl.Lbl();
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Lbl.Lbl());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenBtn(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Btn.Btn());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenImgBtn(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.ImgButton.ImgButton());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
     }

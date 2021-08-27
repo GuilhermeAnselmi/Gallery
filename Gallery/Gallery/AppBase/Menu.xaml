@@ -28,6 +28,8 @@
                     <Label Text="Controls" />
                     <Button Text="Box Control" Clicked="OpenBox" />
                     <Button Text="Label Control" Clicked="OpenLbl" />
+                    <Button Text="Button Control" Clicked="OpenBtn" />
+                    <Button Text="ImageButton Control" Clicked="OpenImgBtn" />
                 </StackLayout>
             </ScrollView>
         </ContentPage>

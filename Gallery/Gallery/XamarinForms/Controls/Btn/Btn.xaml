@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Btn.Btn">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10" BackgroundColor="White">
+                <Label Text="TextColor, CornerRadius" TextColor="Black" />
+                <Button Text="Click-me 1" TextColor="White" BackgroundColor="Black" CornerRadius="10" />
+
+                <Label Text="BorderWidth, BorderColor" TextColor="Black" />
+                <Button Text="Click-me 2" TextColor="Black" BackgroundColor="White" BorderWidth="5" BorderColor="Black" CornerRadius="30" />
+
+                <Label Text="FontFamily, FontSize, FontAttibutes" TextColor="Black" />
+                <Button Text="Click-me 3" TextColor="White" FontFamily="sans-serif-thin" FontSize="Title" FontAttributes="Italic" BackgroundColor="Black" CornerRadius="50" Padding="30, 10, 30, 10" HorizontalOptions="Center" />
+
+                <Label Text="ImageSource, ContentLayout" TextColor="Black" />
+                <Button Text="Click-me 4" TextColor="Black" ImageSource="plane.png" HorizontalOptions="Center" BackgroundColor="White" FontSize="24" BorderColor="Black" BorderWidth="2" CornerRadius="50" Padding="30, 10" ContentLayout="Right, 50" />
+
+                <Label Text="Margin" TextColor="Black" />
+                <Button Text="Click-me 5" TextColor="White" Margin="10, 20" />
+
+                <Label Text="CharacterSpacing" TextColor="Black" />
+                <Button Text="Click-me 6" TextColor="White" Margin="10, 20" CharacterSpacing="10" />
+
+                <Label Text="VisualStateManager, Pressed, Clicked, Released" TextColor="Black" />
+                <Button Text="VisualStateManager" TextColor="White" Margin="10, 20" Pressed="evetPress" Released="evetRelease" Clicked="evetClick">
+                    <VisualStateManager.VisualStateGroups>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Green" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Pressed">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="Red" />
+                                    <Setter Property="BorderColor" Value="Black" />
+                                    <Setter Property="BorderWidth" Value="4" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateManager.VisualStateGroups>
+                </Button>
+                <Label x:Name="lblPress" Text="-" TextColor="Black" />
+                <Label x:Name="lblRelease" Text="-" TextColor="Black" />
+                <Label x:Name="lblClick" Text="-" TextColor="Black" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

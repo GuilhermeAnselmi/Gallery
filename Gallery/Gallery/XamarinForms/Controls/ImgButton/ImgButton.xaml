@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.ImgButton.ImgButton">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <ImageButton 
+                Source="plane.png"
+                BackgroundColor="White"
+                HorizontalOptions="Center"
+                WidthRequest="70"
+                HeightRequest="70"
+                Padding="20"
+                CornerRadius="10"
+                BorderColor="Black"
+                BorderWidth="2"
+                />
+
+            <ImageButton 
+                Source="plane.png"
+                BackgroundColor="White"
+                HorizontalOptions="Center"
+                WidthRequest="120"
+                HeightRequest="100"
+                Padding="20"
+                CornerRadius="10"
+                BorderColor="Black"
+                BorderWidth="2"
+                Aspect="AspectFit"
+                Pressed="evetPress" 
+                Released="evetRelease" 
+                Clicked="evetClick"
+                />
+            <Label x:Name="lblPress" Text="-" TextColor="White" />
+            <Label x:Name="lblRelease" Text="-" TextColor="White" />
+            <Label x:Name="lblClick" Text="-" TextColor="White" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
