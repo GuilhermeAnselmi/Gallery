@@ -30,6 +30,7 @@
                     <Button Text="Label Control" Clicked="OpenLbl" />
                     <Button Text="Button Control" Clicked="OpenBtn" />
                     <Button Text="ImageButton Control" Clicked="OpenImgBtn" />
+                    <Button Text="Image Control" Clicked="OpenImg" />
                 </StackLayout>
             </ScrollView>
         </ContentPage>

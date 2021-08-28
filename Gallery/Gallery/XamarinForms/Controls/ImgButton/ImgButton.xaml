@@ -4,6 +4,7 @@
              x:Class="Gallery.XamarinForms.Controls.ImgButton.ImgButton">
     <ContentPage.Content>
         <StackLayout Padding="20">
+            <Label Text="Source" />
             <ImageButton 
                 Source="plane.png"
                 BackgroundColor="White"
@@ -16,6 +17,7 @@
                 BorderWidth="2"
                 />
 
+            <Label Text="Aspect" />
             <ImageButton 
                 Source="plane.png"
                 BackgroundColor="White"
@@ -26,7 +28,19 @@
                 CornerRadius="10"
                 BorderColor="Black"
                 BorderWidth="2"
-                Aspect="AspectFit"
+                />
+
+            <Label Text="Events" />
+            <ImageButton 
+                Source="plane.png"
+                BackgroundColor="White"
+                HorizontalOptions="Center"
+                WidthRequest="120"
+                HeightRequest="100"
+                Padding="20"
+                CornerRadius="10"
+                BorderColor="Black"
+                BorderWidth="2"
                 Pressed="evetPress" 
                 Released="evetRelease" 
                 Clicked="evetClick"
