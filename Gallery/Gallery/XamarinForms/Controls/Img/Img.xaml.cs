@@ -17,6 +17,11 @@ namespace Gallery.XamarinForms.Controls.Img
             InitializeComponent();
 
             //img01.Source = ImageSource.FromResource("Gallery.XamarinForms.Controls.Img.banner.jpg");
+
+            // From Stream
+            // Download -> System.IO
+            // Após converter a imagem para stream
+            //img01.Source = ImageSource.FromStream(System.IO.Stream);
         }
     }
 }

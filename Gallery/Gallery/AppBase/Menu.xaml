@@ -3,6 +3,13 @@
              xmlns:local="clr-namespace:Gallery.AppBase"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Gallery.AppBase.Menu">
+    
+    <!--ATENTION:
+    MASTER DETAIL PAGE
+    ESTÁ OBSOLETA E FOI
+    SUBSTITUIDA POR
+    FlyoutPage-->
+    
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
             <ScrollView>
@@ -31,10 +38,20 @@
                     <Button Text="Button Control" Clicked="OpenBtn" />
                     <Button Text="ImageButton Control" Clicked="OpenImgBtn" />
                     <Button Text="Image Control" Clicked="OpenImg" />
+                    <Button Text="Entry Control" Clicked="OpenEntr" />
+                    <Button Text="Editor Control" Clicked="OpenEdit" />
+                    <Button Text="CheckBox Control" Clicked="OpenCheck" />
+                    <Button Text="RadioButton Control" Clicked="OpenRadio" />
                 </StackLayout>
             </ScrollView>
         </ContentPage>
     </MasterDetailPage.Master>
+
+    <!--ATENTION:
+    MASTER DETAIL PAGE
+    ESTÁ OBSOLETA E FOI
+    SUBSTITUIDA POR
+    FlyoutPage-->
 
     <MasterDetailPage.Detail>
         <NavigationPage>
@@ -43,4 +60,10 @@
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>
+
+    <!--ATENTION:
+    MASTER DETAIL PAGE
+    ESTÁ OBSOLETA E FOI
+    SUBSTITUIDA POR
+    FlyoutPage-->
 </MasterDetailPage>

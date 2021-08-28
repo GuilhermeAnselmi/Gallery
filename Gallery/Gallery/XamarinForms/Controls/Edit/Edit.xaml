@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Edit.Edit">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Editor" />
+                <Editor HeightRequest="100" />
+                
+                <Label Text="Placeholder, TextColor, Text" />
+                <Editor Text="Teste" Placeholder="Campo 1" TextColor="Black" />
+
+                <Label Text="Placeholder, PlaceholderColor" />
+                <Editor Placeholder="Campo 2" PlaceholderColor="LightBlue" TextColor="LightBlue" />
+
+                <Label Text="MaxLenght" />
+                <Editor Placeholder="Campo 3" MaxLength="5" BackgroundColor="Orange" />
+
+                <Label Text="IsReadOnly" />
+                <Editor Text="Teste para leitura" IsReadOnly="True" />
+
+                <Label Text="FontFamily, FontSize, FontAttributes" />
+                <Editor Text="Teste" FontFamily="sans-serif-thin" FontSize="32" FontAttributes="Italic" />
+
+                <Label Text="CharacterSpacing" />
+                <Editor Text="Teste" CharacterSpacing="5" />
+
+                <!--IsSpellCheckEnabled verifica se a palavra está correta, e o IsTextPredictionEnabled adiciona o corretor ortografico-->
+                <Label Text="IsSpellCheckEnabled, IsTextPredictionEnabled" />
+                <Editor IsSpellCheckEnabled="True" IsTextPredictionEnabled="True" />
+
+                <Label Text="Keyboard" />
+                <Editor Text="12345" Keyboard="Numeric" />
+
+                <Label Text="KeyboardFlags" />
+                <Editor Text="Teste" Keyboard="Email">
+                    <Entry.Keyboard>
+                        <Keyboard x:FactoryMethod="Create">
+                            <x:Arguments>
+                                <KeyboardFlags>Suggestions,SpellCheck,CapitalizeCharacter</KeyboardFlags>
+                            </x:Arguments>
+                        </Keyboard>
+                    </Entry.Keyboard>
+                </Editor>
+
+                <Label x:Name="lblFocus" Text="-" TextColor="White" />
+                <Label x:Name="lblUnfocus" Text="-" TextColor="White" />
+                <Label x:Name="lblChange" Text="-" TextColor="White" />
+                <Label x:Name="lblComplete" Text="-" TextColor="White" />
+                <Label Text="Focused, Unfocused, TextChanged, Completed" />
+                <Editor x:Name="Texting" Focused="Entry_Focused"  Unfocused="Entry_Unfocused" TextChanged="Entry_TextChanged" Completed="Entry_Completed" HeightRequest="200" />
+
+                <!--
+                Template
+                <Label Text="" />
+                <Entry />
+                -->
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

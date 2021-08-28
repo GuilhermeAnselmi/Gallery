@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Radio.Radio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="IsChecked" />
+            <RadioButton IsChecked="False" Content="C#" TextColor="Red" GroupName="Programming" />
+            <RadioButton IsChecked="False" Content="Python" TextColor="Red" GroupName="Programming" />
+            <RadioButton IsChecked="False" Content="Java" TextColor="Red" GroupName="Programming" />
+
+            <Label Text="Event, GroupName" />
+            <RadioButton Content="JavaScript" GroupName="FrontEnd" CheckedChanged="RadioButton_CheckedChanged" />
+            <RadioButton Content="HTML" GroupName="FrontEnd" CheckedChanged="RadioButton_CheckedChanged" />
+            <RadioButton Content="CSS" GroupName="FrontEnd" CheckedChanged="RadioButton_CheckedChanged" />
+            <Label x:Name="lblInfo" Text="-" TextColor="White" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

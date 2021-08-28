@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Padding="10"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Entr.Entr">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Placeholder, TextColor, Text" />
+                <Entry Text="Teste" Placeholder="Campo 1" TextColor="Black" />
+
+                <Label Text="Placeholder, PlaceholderColor" />
+                <Entry Placeholder="Campo 2" PlaceholderColor="LightBlue" TextColor="LightBlue" />
+
+                <Label Text="MaxLenght" />
+                <Entry Placeholder="Campo 3" MaxLength="5" BackgroundColor="Orange" />
+
+                <Label Text="IsPassword" />
+                <Entry Text="12345" IsPassword="True" />
+
+                <Label Text="IsReadOnly" />
+                <Entry Text="Teste para leitura" IsReadOnly="True" />
+
+                <Label Text="ClearButtonVisibility" />
+                <Entry Text="Teste" ClearButtonVisibility="WhileEditing" />
+
+                <Label Text="FontFamily, FontSize, FontAttributes" />
+                <Entry Text="Teste" FontFamily="sans-serif-thin" FontSize="32" FontAttributes="Italic" />
+
+                <Label Text="CharacterSpacing" />
+                <Entry Text="Teste" CharacterSpacing="5" />
+
+                <!--CursorPosition Colocar o Cursor na Posição Textual-->
+                <!--SelectionLenght seleciona do CursorPosition até a quantidade de caracteres colocado-->
+                <Label Text="CursorPosition, SelectionLenght" />
+                <Entry Text="Teste Testes" CursorPosition="7" SelectionLength="4" />
+
+                <!--IsSpellCheckEnabled verifica se a palavra está correta, e o IsTextPredictionEnabled adiciona o corretor ortografico-->
+                <Label Text="IsSpellCheckEnabled, IsTextPredictionEnabled" />
+                <Entry IsSpellCheckEnabled="True" IsTextPredictionEnabled="True" />
+
+                <Label Text="Keyboard" />
+                <Entry Text="12345" Keyboard="Numeric" />
+                
+                <Label Text="KeyboardFlags, ReturnType" />
+                <Entry Text="Teste" Keyboard="Email" ReturnType="Next">
+                    <Entry.Keyboard>
+                        <Keyboard x:FactoryMethod="Create">
+                            <x:Arguments>
+                                <KeyboardFlags>Suggestions,SpellCheck,CapitalizeCharacter</KeyboardFlags>
+                            </x:Arguments>
+                        </Keyboard>
+                    </Entry.Keyboard>
+                </Entry>
+
+                <Label x:Name="lblFocus" Text="-" TextColor="White" />
+                <Label x:Name="lblUnfocus" Text="-" TextColor="White" />
+                <Label x:Name="lblChange" Text="-" TextColor="White" />
+                <Label x:Name="lblComplete" Text="-" TextColor="White" />
+                <Label Text="Focused, Unfocused, TextChanged, Completed" />
+                <Entry x:Name="Texting" Focused="Entry_Focused"  Unfocused="Entry_Unfocused" TextChanged="Entry_TextChanged" Completed="Entry_Completed" />
+
+                <!--
+                Template
+                <Label Text="" />
+                <Entry />
+                -->
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

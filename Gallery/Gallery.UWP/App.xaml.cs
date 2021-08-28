@@ -56,6 +56,8 @@ namespace Gallery.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
+
+                //Xamarin.Forms.Forms.SetFlags(new string[] { "RadioButton_Experimental" });
                 Xamarin.Forms.Forms.Init(e);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)

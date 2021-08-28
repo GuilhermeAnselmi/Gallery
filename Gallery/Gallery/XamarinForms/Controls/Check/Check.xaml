@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Padding="20"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Check.Check">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="IsChecked, Color" />
+            <StackLayout Orientation="Horizontal">
+                <CheckBox Color="LightBlue" IsChecked="True" />
+                <Label Text="Click-me" Margin="0, 5, 0, 0" FontSize="20" />
+            </StackLayout>
+
+            <Label Text="Event: CheckedChanged" />
+            <StackLayout Orientation="Horizontal">
+                <CheckBox Color="LightBlue" IsChecked="True" CheckedChanged="CheckBox_CheckedChanged" />
+                <Label Text="Click-me" Margin="0, 5, 0, 0" FontSize="20" />
+            </StackLayout>
+            <Label x:Name="lblInfo" Text="-" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

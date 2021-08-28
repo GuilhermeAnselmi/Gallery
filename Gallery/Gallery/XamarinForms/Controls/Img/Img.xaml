@@ -4,8 +4,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Gallery.XamarinForms.Controls.Img.Img">
     <ContentPage.Content>
-        <StackLayout>
-            <Image x:Name="img01" Source="{ext:ImageResource Gallery.XamarinForms.Controls.Img.banner.jpg}" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <!--Imagens-->
+                <Label Text="Source dos Recursos" />
+                <Image x:Name="img01" Source="{ext:ImageResource Gallery.XamarinForms.Controls.Img.banner.jpg}" />
+
+                <!--Arquivo -> imagens dentro dos projetos especificos do SO-->
+                <Label Text="Source do Drawable" />
+                <Image Source="xamarin.png" />
+
+                <!--Da web-->
+                <Label Text="Source com URI e Aspect" />
+                <Image Source="https://cdn0.iconfinder.com/data/icons/social-network-7/50/22-512.png" Aspect="AspectFit" />
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
