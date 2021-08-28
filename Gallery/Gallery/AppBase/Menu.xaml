@@ -42,6 +42,9 @@
                     <Button Text="Editor Control" Clicked="OpenEdit" />
                     <Button Text="CheckBox Control" Clicked="OpenCheck" />
                     <Button Text="RadioButton Control" Clicked="OpenRadio" />
+                    <Button Text="Switch Control" Clicked="OpenSwt" />
+                    <Button Text="Stepper Control" Clicked="OpenStep" />
+                    <Button Text="Slider Control" Clicked="OpenSlid" />
                 </StackLayout>
             </ScrollView>
         </ContentPage>

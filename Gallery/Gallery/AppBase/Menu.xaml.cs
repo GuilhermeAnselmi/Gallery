@@ -154,5 +154,23 @@ namespace Gallery.AppBase
             ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Radio.Radio());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
+
+        private void OpenSwt(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Swt.Swt());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenStep(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Step.Step());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenSlid(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Slid.Slid());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
     }
 }

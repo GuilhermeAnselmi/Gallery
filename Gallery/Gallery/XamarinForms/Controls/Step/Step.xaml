@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Padding="20"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Step.Step">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Increment, Minimum, Maximum, Value, ValueChanged" />
+            <Stepper Increment="5" Minimum="-10" Maximum="25" Value="5" ValueChanged="Stepper_ValueChanged" />
+            <Label x:Name="lblInfo" Text="5" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

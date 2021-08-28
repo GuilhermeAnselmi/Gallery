@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Padding="10"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Slid.Slid">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Minimum, Maximum, Value, ValueChanged, MaximumTackColor, MinimumTrackColor, ThumbColor" />
+            <Slider Minimum="0" Maximum="50" Value="3" MaximumTrackColor="Red" MinimumTrackColor="Green" ThumbColor="DarkGreen" />
+
+            <Label Text="ThumbImageSource" />
+            <Slider Minimum="0" Maximum="50" MaximumTrackColor="Gray" MinimumTrackColor="Gray" ThumbImageSource="plane.png" />
+
+            <Label Text="ValueChanged, DragStarted, DragCompleted" />
+            <Slider Minimum="0" Maximum="50" Value="25" ValueChanged="Slider_ValueChanged" DragStarted="Slider_DragStarted" DragCompleted="Slider_DragCompleted"  MaximumTrackColor="Gray" MinimumTrackColor="Gray" ThumbColor="Gray" />
+
+            <Label x:Name="lblInfo" Text="25" TextColor="White" />
+            <Label x:Name="lblStart" Text="-" TextColor="White" />
+            <Label x:Name="lblEnd" Text="-" TextColor="White" />
+
+            <Label Text="ThumbImageSource" />
+            <Slider Minimum="0" Maximum="50" MaximumTrackColor="Gray" MinimumTrackColor="Gray" ThumbColor="Gray" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
