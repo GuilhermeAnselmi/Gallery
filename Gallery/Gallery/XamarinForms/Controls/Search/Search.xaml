@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Padding="10"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Search.Search">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="CancelButtonColor, TextColor, PlaceholderColor, Placeholder" />
+            <SearchBar TextColor="White" CancelButtonColor="White" PlaceholderColor="Gray" Placeholder="Pesquisar Carros..." />
+
+            <Label Text="TextChanged, SearchButtonPressed" />
+            <SearchBar TextColor="White" CancelButtonColor="White" PlaceholderColor="Gray" Placeholder="Pesquisar Carros..." TextChanged="SearchBar_TextChanged" SearchButtonPressed="SearchBar_SearchButtonPressed" />
+            <Label x:Name="lblOne" Text="-" />
+            <Label x:Name="lblTwo" Text="-" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

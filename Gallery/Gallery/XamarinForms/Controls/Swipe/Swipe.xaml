@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Swipe.Swipe">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="SwipeView" />
+            <Label Text="Properties: Position - SwipeView.SwipeItems, SwipeItem: Text" />
+            <Label Text="Event's: " />
+            <Label Text="Obs: " />
+            <Label Text="" />
+
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItems>
+                        <SwipeItem Text="Detalhe" BackgroundColor="#85BAFF" />
+                        <SwipeItem Text="Editar" BackgroundColor="#FFD026" />
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+                <Frame BorderColor="Gray" Margin="20">
+                    <Label Text="Arrastar" TextColor="Red" FontSize="24" HorizontalTextAlignment="Center" />
+                </Frame>
+            </SwipeView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

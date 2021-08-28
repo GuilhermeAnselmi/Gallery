@@ -4,5 +4,6 @@
     <color name="ic_launcher_background">#121212</color>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#969696</color>
+    <color name="defaultRadioButton">#1976D2</color>
 </resources>

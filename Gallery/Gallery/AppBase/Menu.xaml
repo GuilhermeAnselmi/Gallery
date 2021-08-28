@@ -45,6 +45,14 @@
                     <Button Text="Switch Control" Clicked="OpenSwt" />
                     <Button Text="Stepper Control" Clicked="OpenStep" />
                     <Button Text="Slider Control" Clicked="OpenSlid" />
+                    <Button Text="Picker Control" Clicked="OpenPick" />
+                    <Button Text="DatePicker Control" Clicked="OpenDatePick" />
+                    <Button Text="TimePicker Control" Clicked="OpenTimePick" />
+                    <Button Text="ActivityIndicator Control" Clicked="OpenIndicator" />
+                    <Button Text="ProgressBar Control" Clicked="OpenProgress" />
+                    <Button Text="SearchBar Control" Clicked="OpenSearch" />
+                    <Button Text="RefreshView Control" Clicked="OpenRe" />
+                    <Button Text="SwipeView Control" Clicked="OpenSwipe" />
                 </StackLayout>
             </ScrollView>
         </ContentPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Padding="10"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Re.Re">
+    <ContentPage.Content>
+        <RefreshView RefreshColor="Orange" IsRefreshing="False" Refreshing="RefreshView_Refreshing">
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="RefreshView" />
+                    <Label Text="Properties: IsRefreshing, RefreshColor" />
+                    <Label Text="Event's: Refreshing" />
+                    <Label Text="Obs: Barra de Rolagem - ScrollView, ListView, CollectionView, CarouselView" />
+                    <Label x:Name="lblInfo" Text="Not Refresh" TextColor="Red" HorizontalOptions="Center" VerticalOptions="Center" FontSize="28" />
+                </StackLayout>
+            </ScrollView>
+        </RefreshView>
+    </ContentPage.Content>
+</ContentPage>

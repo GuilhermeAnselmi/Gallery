@@ -31,5 +31,14 @@ namespace Gallery.XamarinForms.Controls.Slid
         {
             lblEnd.Text = "End";
         }
+
+        private void Slider_ValueChanged_1(object sender, ValueChangedEventArgs e)
+        {
+            int steps = 1;
+            double newStep = Math.Round(e.NewValue / steps);
+            ((Slider)sender).Value = newStep * steps;
+
+            lblValue.Text = e.NewValue.ToString();
+        }
     }
 }

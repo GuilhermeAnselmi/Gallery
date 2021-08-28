@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Padding="10"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Pick.Pick">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Items, Title, TitleColor, TextColor" />
+            <Picker Title="Selecione a Linguagem" TitleColor="Green" TextColor="Orange">
+                <Picker.Items>
+                    <x:String>C#</x:String>
+                    <x:String>Python</x:String>
+                    <x:String>Java</x:String>
+                    <x:String>PHP</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="FontFamily, FontSize, FontAttributes, CharacterSpacing" />
+            <Picker Title="Selecione a Linguagem" FontFamily="sans-serif-thin" FontAttributes="Italic" FontSize="24" CharacterSpacing="5">
+                <Picker.Items>
+                    <x:String>C#</x:String>
+                    <x:String>Python</x:String>
+                    <x:String>Java</x:String>
+                    <x:String>PHP</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="SelectedIndex" />
+            <Picker Title="Selecione a Linguagem" TitleColor="Green" TextColor="Orange" SelectedIndex="0">
+                <Picker.Items>
+                    <x:String>C#</x:String>
+                    <x:String>Python</x:String>
+                    <x:String>Java</x:String>
+                    <x:String>PHP</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="SelectedItem, SelectedIndexChanged" />
+            <Picker Title="Selecione a Linguagem" TitleColor="Green" TextColor="Orange" SelectedIndexChanged="Picker_SelectedIndexChanged" SelectedItem="C#">
+                <Picker.Items>
+                    <x:String>C#</x:String>
+                    <x:String>Python</x:String>
+                    <x:String>Java</x:String>
+                    <x:String>PHP</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label x:Name="lblInfo" Text="-" />
+
+            <Label Text="Limapr Campo" />
+            <Picker Title="Selecione a Linguagem" TitleColor="Green" TextColor="Orange" SelectedIndexChanged="Picker_SelectedIndexChanged_1">
+                <Picker.Items>
+                    <x:String>Deselecionar</x:String>
+                    <x:String>C#</x:String>
+                    <x:String>Python</x:String>
+                    <x:String>Java</x:String>
+                    <x:String>PHP</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -18,8 +18,9 @@
             <Label x:Name="lblStart" Text="-" TextColor="White" />
             <Label x:Name="lblEnd" Text="-" TextColor="White" />
 
-            <Label Text="ThumbImageSource" />
-            <Slider Minimum="0" Maximum="50" MaximumTrackColor="Gray" MinimumTrackColor="Gray" ThumbColor="Gray" />
+            <Label Text="Dica (Incremento)" />
+            <Slider Minimum="0" Maximum="10" Value="0" MaximumTrackColor="Gray" MinimumTrackColor="Gray" ThumbColor="Gray" ValueChanged="Slider_ValueChanged_1" />
+            <Label x:Name="lblValue" Text="0" TextColor="White" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

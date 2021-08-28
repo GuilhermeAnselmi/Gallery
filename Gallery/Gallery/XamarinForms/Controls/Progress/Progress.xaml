@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Padding="10"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Progress.Progress">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ProgressColor, Progress" />
+            <ProgressBar ProgressColor="Orange" Progress="0.5" />
+
+            <Label Text="Event" />
+            <ProgressBar x:Name="bar" ProgressColor="LightBlue" />
+            <Button Text="Processar(10%)" Clicked="Button_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
