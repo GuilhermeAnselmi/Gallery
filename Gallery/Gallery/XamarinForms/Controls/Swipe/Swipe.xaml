@@ -1,26 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Padding="10"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Gallery.XamarinForms.Controls.Swipe.Swipe">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="SwipeView" />
-            <Label Text="Properties: Position - SwipeView.SwipeItems, SwipeItem: Text" />
-            <Label Text="Event's: " />
+            <Label Text="Properties: Position - SwipeView.SwipeItems, SwipeItem: Text, SwipeBehaviorOnInvoked, Mode" />
+            <Label Text="Event's: Invoked, Clicked, SwipeStarted, SwipeChanged, SwipeEnded" />
             <Label Text="Obs: " />
             <Label Text="" />
 
-            <SwipeView>
+            <SwipeView SwipeStarted="SwipeView_SwipeStarted" SwipeChanging="SwipeView_SwipeChanging" SwipeEnded="SwipeView_SwipeEnded">
                 <SwipeView.LeftItems>
-                    <SwipeItems>
-                        <SwipeItem Text="Detalhe" BackgroundColor="#85BAFF" />
-                        <SwipeItem Text="Editar" BackgroundColor="#FFD026" />
+                    <SwipeItems SwipeBehaviorOnInvoked="RemainOpen">
+                        <SwipeItem Text="Detalhes" BackgroundColor="#85BAFF" IconImageSource="plane.png" Invoked="SwipeItem_Invoked" />
+                        <SwipeItem Text="Editar" BackgroundColor="#FFD026" Invoked="SwipeItem_Invoked_1" />
                     </SwipeItems>
                 </SwipeView.LeftItems>
+
+                <SwipeView.RightItems>
+                    <SwipeItems Mode="Execute">
+                        <SwipeItem Text="Excluir" BackgroundColor="#F20E0E" Invoked="SwipeItem_Invoked_2" />
+                    </SwipeItems>
+                </SwipeView.RightItems>
+                
                 <Frame BorderColor="Gray" Margin="20">
                     <Label Text="Arrastar" TextColor="Red" FontSize="24" HorizontalTextAlignment="Center" />
                 </Frame>
             </SwipeView>
+
+            <Label x:Name="lblDetalhe" Text="-" />
+            <Label x:Name="lblEditar" Text="-" />
+            <Label x:Name="lblExcluir" Text="-" />
+            <Label x:Name="lblStart" Text="-" />
+            <Label x:Name="lblChange" Text="-" />
+            <Label x:Name="lblEnd" Text="-" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
