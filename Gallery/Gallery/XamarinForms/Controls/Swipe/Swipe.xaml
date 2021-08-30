@@ -11,7 +11,7 @@
             <Label Text="Obs: " />
             <Label Text="" />
 
-            <SwipeView SwipeStarted="SwipeView_SwipeStarted" SwipeChanging="SwipeView_SwipeChanging" SwipeEnded="SwipeView_SwipeEnded">
+            <SwipeView x:Name="svControl" SwipeStarted="SwipeView_SwipeStarted" SwipeChanging="SwipeView_SwipeChanging" SwipeEnded="SwipeView_SwipeEnded" CloseRequested="SwipeView_CloseRequested">
                 <SwipeView.LeftItems>
                     <SwipeItems SwipeBehaviorOnInvoked="RemainOpen">
                         <SwipeItem Text="Detalhes" BackgroundColor="#85BAFF" IconImageSource="plane.png" Invoked="SwipeItem_Invoked" />
@@ -36,6 +36,34 @@
             <Label x:Name="lblStart" Text="-" />
             <Label x:Name="lblChange" Text="-" />
             <Label x:Name="lblEnd" Text="-" />
+            <Label x:Name="lblClose" Text="-" />
+
+            <Button Text="Close SwipeView" Clicked="Button_Clicked" />
+
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItems SwipeBehaviorOnInvoked="Close">
+                        <SwipeItem Text="Detalhes" BackgroundColor="#85BAFF" IconImageSource="plane.png" />
+                        <SwipeItem Text="Editar" BackgroundColor="#FFD026" />
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+
+                <SwipeView.RightItems>
+                    <SwipeItems Mode="Reveal">
+                        <SwipeItemView>
+                            <StackLayout BackgroundColor="LightSkyBlue" Padding="5">
+                                <Label Text="Visualizar" TextColor="White" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="10" />
+                                <Label Text="Produto" TextColor="White" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Padding="10" />
+                            </StackLayout>
+                        </SwipeItemView>
+                        <SwipeItem Text="Excluir" BackgroundColor="#F20E0E" />
+                    </SwipeItems>
+                </SwipeView.RightItems>
+
+                <Frame BorderColor="Gray" Margin="20">
+                    <Label Text="Arrastar" TextColor="Red" FontSize="24" HorizontalTextAlignment="Center" />
+                </Frame>
+            </SwipeView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -53,6 +53,7 @@
                     <Button Text="SearchBar Control" Clicked="OpenSearch" />
                     <Button Text="RefreshView Control" Clicked="OpenRe" />
                     <Button Text="SwipeView Control" Clicked="OpenSwipe" />
+                    <Button Text="WebView Control" Clicked="OpenWeb" />
                 </StackLayout>
             </ScrollView>
         </ContentPage>

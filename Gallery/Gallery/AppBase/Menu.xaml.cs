@@ -220,5 +220,11 @@ namespace Gallery.AppBase
             ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Swipe.Swipe());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
+
+        private void OpenWeb(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Web.Web());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
     }
 }

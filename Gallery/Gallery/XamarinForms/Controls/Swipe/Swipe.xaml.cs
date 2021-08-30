@@ -46,5 +46,15 @@ namespace Gallery.XamarinForms.Controls.Swipe
         {
             lblEnd.Text = "End: " + DateTime.Now + " : " + e.SwipeDirection;
         }
+
+        private void SwipeView_CloseRequested(object sender, CloseRequestedEventArgs e)
+        {
+            lblClose.Text = "Closed: " + DateTime.Now;
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            svControl.Close();
+        }
     }
 }
