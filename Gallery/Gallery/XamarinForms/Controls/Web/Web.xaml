@@ -5,22 +5,41 @@
              Padding="10">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
+            <StackLayout Spacing="20">
                 <Label Text="WebView" />
-                <Label Text="Properties: Source (direcionando para url)" />
-                <Label Text="Event's: " />
+                <Label Text="Properties: Source (direcionando para url), CanGoBack, CanGoForward" />
+                <Label Text="Event's: Navigated, Navigating" />
                 <Label Text="Obs: Habilitar a internet no Android e no UWP, e habilitar o http no Android (android:usesCleartextTraffic='true')" />
 
-                <Frame BorderColor="red" Padding="1" IsVisible="false">
+                <Frame BorderColor="red" Padding="1" IsVisible="true">
                     <WebView x:Name="Web01" Source="https://www.google.com.br" HorizontalOptions="FillAndExpand" HeightRequest="400"></WebView>
                 </Frame>
 
-                <Frame BorderColor="red" Padding="1" IsVisible="false">
+                <Frame BorderColor="red" Padding="1" IsVisible="true">
                     <WebView x:Name="Web02" HorizontalOptions="FillAndExpand" HeightRequest="400"></WebView>
                 </Frame>
 
-                <Frame BorderColor="red" Padding="1">
+                <Frame BorderColor="red" Padding="1" IsVisible="true">
                     <WebView x:Name="Web03" HorizontalOptions="FillAndExpand" HeightRequest="400"></WebView>
+                </Frame>
+
+                <Frame BorderColor="red" BackgroundColor="White" Padding="5">
+                    <StackLayout>
+                        <Label x:Name="lblUrl" Text="URL" TextColor="Black" HorizontalTextAlignment="Center" FontSize="18" />
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="Voltar" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Clicked="Done" />
+                            <Button Text="Atualizar" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Clicked="Refresh" />
+                            <Button Text="Próxima" BackgroundColor="Gray" HorizontalOptions="FillAndExpand" Clicked="Next" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame BorderColor="Gray" Padding="5" IsVisible="true">
+                    <WebView Navigated="Web04_Navigated" Navigating="Web04_Navigating" x:Name="Web04" Source="https://www.google.com" HorizontalOptions="FillAndExpand" HeightRequest="400"></WebView>
+                </Frame>
+
+                <Frame BorderColor="Gray" BackgroundColor="White" Padding="5">
+                    <Label x:Name="lblStatus" Text="Status" TextColor="Black" />
                 </Frame>
             </StackLayout>
         </ScrollView>

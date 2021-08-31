@@ -47,5 +47,37 @@ namespace Gallery.XamarinForms.Controls.Web
             path.Url = Path.Combine(BaseUrl, "index.html");
             Web03.Source = path;
         }
+
+        private void Done(object sender, EventArgs e)
+        {
+            if (Web04.CanGoBack)
+            {
+                Web04.GoBack();
+            }
+        }
+
+        private void Refresh(object sender, EventArgs e)
+        {
+            Web04.Reload();
+        }
+
+        private void Next(object sender, EventArgs e)
+        {
+            if (Web04.CanGoForward)
+            {
+                Web04.GoForward();
+            }
+        }
+
+        private void Web04_Navigated(object sender, WebNavigatedEventArgs e)
+        {
+            lblStatus.Text = "Carregado";
+            lblUrl.Text = e.Url;
+        }
+
+        private void Web04_Navigating(object sender, WebNavigatingEventArgs e)
+        {
+            lblStatus.Text = "Carregando...";
+        }
     }
 }

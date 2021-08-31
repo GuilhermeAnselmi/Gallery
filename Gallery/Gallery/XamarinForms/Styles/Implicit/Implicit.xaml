@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:btnDef="clr-namespace:Gallery.XamarinForms.Styles.Implicit"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Styles.Implicit.Implicit">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button" ApplyToDerivedTypes="true">
+                <Setter Property="BackgroundColor" Value="Green" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Margin" Value="10" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            </Style>
+
+            <Style TargetType="InputView" ApplyToDerivedTypes="True">
+                <Setter Property="PlaceholderColor" Value="Gray" />
+                <Setter Property="TextColor" Value="Green" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="Placeholder" Value="Testeee" />
+                <Setter Property="Margin" Value="10" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ImplicitStyle" />
+
+            <Entry />
+            <Editor />
+
+            <Button Text="Buttons 01" />
+            <Button Text="Buttons 02" />
+            <Button Text="Buttons 03" />
+            <Button Text="Buttons 04" />
+
+            <btnDef:btn />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

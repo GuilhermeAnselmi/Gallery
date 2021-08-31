@@ -54,6 +54,11 @@
                     <Button Text="RefreshView Control" Clicked="OpenRe" />
                     <Button Text="SwipeView Control" Clicked="OpenSwipe" />
                     <Button Text="WebView Control" Clicked="OpenWeb" />
+
+                    <Label Text="Styles" />
+                    <Button Text="ExplicitStyles Control" Clicked="OpenExplicit" />
+                    <Button Text="ImplicitStyles Control" Clicked="OpenImplicit" />
+                    <Button Text="GlobalStyles Control" Clicked="OpenGlobal" />
                 </StackLayout>
             </ScrollView>
         </ContentPage>

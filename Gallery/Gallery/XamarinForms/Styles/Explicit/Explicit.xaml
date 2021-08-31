@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Styles.Explicit.Explicit">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LocalButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="HotPink" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Margin" Value="10" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ExplicitStyle" />
+            <Label Text="Vantagem: Padroniza (Em todas as plataformas), Reutilização, Organização, Manutenção facilitada" />
+            <Button Text="Button 01" Style="{StaticResource LocalButton}" />
+            <Button Text="Button 02" Style="{StaticResource LocalButton}" />
+            <Button Text="Button 03" Style="{StaticResource Buttons}" />
+
+            <StackLayout Orientation="Horizontal">
+                <StackLayout.Resources>
+                    <ResourceDictionary>
+                        <Style x:Key="LocalButton" TargetType="Button">
+                            <Setter Property="BackgroundColor" Value="Green" />
+                            <Setter Property="TextColor" Value="White" />
+                            <Setter Property="Margin" Value="10" />
+                            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                        </Style>
+                    </ResourceDictionary>
+                </StackLayout.Resources>
+
+                <Button Text="Button 04" Style="{StaticResource LocalButton}" />
+                <Button Text="Button 05" Style="{StaticResource LocalButton}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

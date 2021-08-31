@@ -226,5 +226,25 @@ namespace Gallery.AppBase
             ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Web.Web());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
+
+
+
+        private void OpenExplicit(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Styles.Explicit.Explicit());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenImplicit(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Styles.Implicit.Implicit());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenGlobal(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Styles.Global.Global());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
     }
 }

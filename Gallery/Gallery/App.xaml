@@ -3,6 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Gallery.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Buttons" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Margin" Value="10" />
+            </Style>
 
+            <!--Cores-->
+            <!--<AppThemeColor x:Key="PageBackgroundColor" Light="" Dark="" />
+            <AppThemeColor x:Key="PageBackgroundColor" Light="" Dark="" />
+            <AppThemeColor x:Key="PageBackgroundColor" Light="" Dark="" />
+            <AppThemeColor x:Key="PageBackgroundColor" Light="" Dark="" />-->
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
