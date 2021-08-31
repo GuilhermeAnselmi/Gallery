@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Styles.Inherit.Inherit">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseView" TargetType="View">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            </Style>
+
+            <Style x:Key="BaseButton"  TargetType="Button" BasedOn="{StaticResource BaseView}">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+
+            <Style x:Key="Cancel" TargetType="Button" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="#E74C3C" />
+            </Style>
+
+            <Style x:Key="Save" TargetType="Button" BasedOn="{StaticResource BaseButton}">
+                <Setter Property="BackgroundColor" Value="#27AE60" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Inherit" />
+            
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cancelar" Style="{StaticResource Cancel}" />
+                <Button Text="Salvar" Style="{StaticResource Save}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

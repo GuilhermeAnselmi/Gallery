@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             Padding="10"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Styles.Dynamic.Dynamic">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PrimaryColor">#E74C3C</Color>
+            
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            </Style>
+            
+            <Style x:Key="ButtonStyleDynamic" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Dynamic" />
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="lblColor" Placeholder="Cor Hexadecimal" />
+                <Button Text="Acionar" HorizontalOptions="FillAndExpand" Clicked="Enter" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Static" Style="{StaticResource ButtonStyle}" BackgroundColor="{StaticResource PrimaryColor}" />
+                <Button Text="Dynamic" Style="{DynamicResource ButtonStyle}" BackgroundColor="{DynamicResource PrimaryColor}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

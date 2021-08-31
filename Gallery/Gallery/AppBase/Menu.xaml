@@ -54,11 +54,17 @@
                     <Button Text="RefreshView Control" Clicked="OpenRe" />
                     <Button Text="SwipeView Control" Clicked="OpenSwipe" />
                     <Button Text="WebView Control" Clicked="OpenWeb" />
+                    <Button Text="MediaView Control" Clicked="OpenMedia" />
 
                     <Label Text="Styles" />
                     <Button Text="ExplicitStyles Control" Clicked="OpenExplicit" />
                     <Button Text="ImplicitStyles Control" Clicked="OpenImplicit" />
                     <Button Text="GlobalStyles Control" Clicked="OpenGlobal" />
+                    <Button Text="InheritStyles Control" Clicked="OpenInherit" />
+                    <Button Text="DynamicStyles Control" Clicked="OpenDynamic" />
+                    <Button Text="ClassStyles Control" Clicked="OpenClass" />
+                    <Button Text="Visual State Manager Control" Clicked="OpenVSM" />
+                    <Button Text="Material Design Control" Clicked="OpenMaterial" />
                 </StackLayout>
             </ScrollView>
         </ContentPage>

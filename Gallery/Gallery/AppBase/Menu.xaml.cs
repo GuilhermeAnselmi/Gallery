@@ -227,6 +227,12 @@ namespace Gallery.AppBase
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
+        private void OpenMedia(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Media.Element());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
 
 
         private void OpenExplicit(object sender, EventArgs e)
@@ -244,6 +250,36 @@ namespace Gallery.AppBase
         private void OpenGlobal(object sender, EventArgs e)
         {
             ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Styles.Global.Global());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenInherit(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Styles.Inherit.Inherit());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenDynamic(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Styles.Dynamic.Dynamic());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenClass(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Styles.Class.Class());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenVSM(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Styles.VSM.VSM());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenMaterial(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Styles.Material.Material());
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
     }
