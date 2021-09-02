@@ -55,6 +55,11 @@
                     <Button Text="SwipeView Control" Clicked="OpenSwipe" />
                     <Button Text="WebView Control" Clicked="OpenWeb" />
                     <Button Text="MediaView Control" Clicked="OpenMedia" />
+                    <Button Text="Expander Control" Clicked="OpenExp" />
+
+                    <Label Text="Lists" />
+                    <Button Text="TableView Control" Clicked="OpenTable" />
+                    <Button Text="ListView Control" Clicked="OpenList" />
 
                     <Label Text="Styles" />
                     <Button Text="ExplicitStyles Control" Clicked="OpenExplicit" />

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:tool="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Controls.Exp.Exp">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Expander" />
+
+            <Frame BorderColor="Green" Margin="10">
+                <tool:Expander IsExpanded="False" ExpandAnimationEasing="{x:Static Easing.SpringIn}" ExpandAnimationLength="300" CollapseAnimationEasing="{x:Static Easing.SinInOut}" CollapseAnimationLength="500">
+                    <tool:Expander.Header>
+                        <Label Text="Receita" TextColor="Green" />
+                    </tool:Expander.Header>
+                    <tool:Expander.Content>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+
+                            <!-- Linha -->
+                            <Label Text="03" Grid.Row="0" Grid.Column="0" TextColor="Black" />
+                            <Label Text="Salario" Grid.Row="0" Grid.Column="1" TextColor="Black" />
+                            <Label Text="R$ 3.000,00" Grid.Row="0" Grid.Column="2" TextColor="Green" />
+
+                            <!-- Linha -->
+                            <Label Text="03" Grid.Row="1" Grid.Column="0" TextColor="Black" />
+                            <Label Text="Bônus" Grid.Row="1" Grid.Column="1" TextColor="Black" />
+                            <Label Text="R$ 500,00" Grid.Row="1" Grid.Column="2" TextColor="Green" />
+                        </Grid>
+                    </tool:Expander.Content>
+                </tool:Expander>
+            </Frame>
+
+            <Frame BorderColor="Red" Margin="10">
+                <tool:Expander IsExpanded="False" ExpandAnimationEasing="{x:Static Easing.SpringIn}" ExpandAnimationLength="300" CollapseAnimationEasing="{x:Static Easing.SinInOut}" CollapseAnimationLength="500">
+                    <tool:Expander.Header>
+                        <Label Text="Receita" TextColor="Red" />
+                    </tool:Expander.Header>
+                    <tool:Expander.Content>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+
+                            <!-- Linha -->
+                            <Label Text="04" Grid.Row="0" Grid.Column="0" TextColor="Black" />
+                            <Label Text="Restaurante" Grid.Row="0" Grid.Column="1" TextColor="Black" />
+                            <Label Text="R$ 250,00" Grid.Row="0" Grid.Column="2" TextColor="Red" />
+
+                            <!-- Linha -->
+                            <Label Text="07" Grid.Row="1" Grid.Column="0" TextColor="Black" />
+                            <Label Text="Mercado" Grid.Row="1" Grid.Column="1" TextColor="Black" />
+                            <Label Text="R$ 400,00" Grid.Row="1" Grid.Column="2" TextColor="Red" />
+
+                            <!-- Linha -->
+                            <Label Text="07" Grid.Row="2" Grid.Column="0" TextColor="Black" />
+                            <Label Text="Mecânico" Grid.Row="2" Grid.Column="1" TextColor="Black" />
+                            <Label Text="R$ 200,00" Grid.Row="2" Grid.Column="2" TextColor="Red" />
+                        </Grid>
+                    </tool:Expander.Content>
+                </tool:Expander>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

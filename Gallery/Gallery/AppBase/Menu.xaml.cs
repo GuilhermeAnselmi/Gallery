@@ -233,6 +233,24 @@ namespace Gallery.AppBase
             ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
         }
 
+        private void OpenExp(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Controls.Exp.Exp());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenTable(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Lists.Table.Table());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
+        private void OpenList(object sender, EventArgs e)
+        {
+            ((MasterDetailPage)App.Current.MainPage).Detail = new NavigationPage(new XamarinForms.Lists.List.List());
+            ((MasterDetailPage)App.Current.MainPage).IsPresented = false;
+        }
+
 
 
         private void OpenExplicit(object sender, EventArgs e)

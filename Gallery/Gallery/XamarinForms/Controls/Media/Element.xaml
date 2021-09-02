@@ -11,7 +11,7 @@
                 <Label Text="Proparties: AutoPlay, ShowsPlaybackControls, Volume, IsLooping, KeepScreenOn" />
                 <!-- KeepScreenOn='True' -> Faz o celular não entrar no modo de espera -->
                 <Label Text="Methods: Play(), Pause(), Stop()" />
-                <Label Text="Event's: " />
+                <Label Text="Event's: MediaOpened, MediaEnded, MediaFailed" />
 
                 <!--https://sec.ch9.ms/ch9/f9d9/6f5330ad-8b07-4b9c-a76d-3c744627f9d9/UsingYoutubeAPIWithXamarinForms_high.mp4-->
                 <Label Text="MP3" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
@@ -19,8 +19,16 @@
 
                 <Label Text="MP4" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" />
                 <xct:MediaElement Source="ms-appx:///alarm.mp4" HeightRequest="200" HorizontalOptions="FillAndExpand" AutoPlay="False" ShowsPlaybackControls="True" Aspect="AspectFit" BackgroundColor="White" />
-                <xct:MediaElement x:Name="vidControl" Volume="1" KeepScreenOn="True" Source="https://sec.ch9.ms/ch9/f9d9/6f5330ad-8b07-4b9c-a76d-3c744627f9d9/UsingYoutubeAPIWithXamarinForms_high.mp4" HeightRequest="220" HorizontalOptions="FillAndExpand" AutoPlay="False" ShowsPlaybackControls="False" Aspect="AspectFit" Margin="0, 40" BackgroundColor="White" />
+                <xct:MediaElement x:Name="vidControl" Volume="1" MediaOpened="Open" KeepScreenOn="True" Source="https://sec.ch9.ms/ch9/f9d9/6f5330ad-8b07-4b9c-a76d-3c744627f9d9/UsingYoutubeAPIWithXamarinForms_high.mp4" HeightRequest="220" HorizontalOptions="FillAndExpand" AutoPlay="False" ShowsPlaybackControls="False" Aspect="AspectFit" Margin="0, 40" BackgroundColor="White" />
 
+                <!-- MediaOpen -> Chamado sempre que o video é carregado -->
+                
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="lblPosition" Text="00:00" />
+                    <Slider x:Name="sldPosition" IsEnabled="False" MinimumTrackColor="Accent" HorizontalOptions="FillAndExpand" Minimum="0.0" Maximum="1.0" Value="0" />
+                    <Label x:Name="lblDuration" Text="00:00" HorizontalOptions="End" />
+                </StackLayout>
+                
                 <StackLayout HorizontalOptions="FillAndExpand">
                     <Slider MinimumTrackColor="Accent" MaximumTrackColor="Gray" Minimum="0.0" Maximum="1.0" Value="1" ValueChanged="Volume" />
 

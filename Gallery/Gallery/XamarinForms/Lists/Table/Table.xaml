@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Lists.Table.Table">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Table" />
+            <Label Text="Properties: RowHeight, HasUnevenRows(faz cada linha se tornar dimensionavel para caber todo conteudo), Intent (Intenção da table)" />
+            <Label Text="Event's: Tapped" />
+
+            <!-- TextCell, ImageCell, EntryCell, SwitchCell, ViewCell -->
+            <TableView HasUnevenRows="True">
+                <TableRoot>
+                    <TableSection Title="Gerencia">
+                        <TextCell Tapped="TextCell_Tapped" Text="Guilherme Anselmi Marques" TextColor="White" Detail="Owner" DetailColor="Gray" />
+                        <TextCell Text="Gabrielle de Andrade Silva" TextColor="White" Detail="RH Manager" DetailColor="Gray" />
+                    </TableSection>
+
+                    <TableSection Title="Supervisores">
+                        <ImageCell Text="Guilherme Anselmi Marques" Detail="Owner" ImageSource="perfil.png" TextColor="White" DetailColor="Gray" />
+                    </TableSection>
+
+                    <TableSection Title="Operacionais">
+                        <TextCell Text="Isabela Marques" TextColor="White" Detail="Selling" DetailColor="Gray" />
+                    </TableSection>
+
+                    <TableSection Title="Formulário de Cadastro">
+                        <EntryCell Label="Name: " LabelColor="White" Placeholder="Digite seu nome" />
+                        <EntryCell Label="CPF: " LabelColor="White" Placeholder="Digite seu CPF" Keyboard="Numeric" />
+                        <SwitchCell Text="Tem alguma deficiencia?" />
+                        <SwitchCell Text="É casado?" OnColor="Green" />
+                    </TableSection>
+
+                    <TableSection>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="0, 10">
+                                <Label Text="Sexo" Padding="17, 0, 0, 0" VerticalOptions="CenterAndExpand" />
+                                <RadioButton Content="Masculino" GroupName="Sexo" HorizontalOptions="EndAndExpand" />
+                                <RadioButton Content="Feminino" GroupName="Sexo" Padding="0, 0, 15, 0" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Button Text="Cancel" BackgroundColor="#CA2626" />
+                                <Button Text="Salvar" BackgroundColor="#5CC53C" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

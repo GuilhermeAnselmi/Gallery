@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gallery.XamarinForms.Lists.List.List">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <ListView>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Mobi</x:String>
+                        <x:String>Uno</x:String>
+                        <x:String>Argo</x:String>
+                        <x:String>Cronos</x:String>
+                        <x:String>Toro</x:String>
+                        <x:String>Grand Siena</x:String>
+                        <x:String>Straga</x:String>
+                        <x:String>Dublò</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding .}" TextColor="White" Detail="Motor 1.0" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <ListView x:Name="list" IsPullToRefreshEnabled="True" RefreshControlColor="Orange" Refreshing="list_Refreshing" IsGroupingEnabled="True" SeparatorVisibility="Default" SeparatorColor="LightBlue" HasUnevenRows="True">
+                <ListView.Header>
+                    <StackLayout>
+                        <Label Text="ListView" />
+                        <Label Text="Properties: ItemsSource, ItemTemplate, SeparatorVisibility, SeparatorColor, HasUnevenRows, VerticalScrollBarVisibility" />
+                        <Label Text="Properties: Header, Footer (podem ser usados como propriedade e tambem para personalizar com stacklayout), IsGroupingEnabled(Habilitar trabalhar com grupos)" />
+                        <Label Text="Properties: " />
+                    </StackLayout>
+                </ListView.Header>
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding Name}" TextColor="Accent" FontSize="20" FontAttributes="Bold" Padding="20, 30" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Visualizar" Clicked="MenuItem_Clicked" CommandParameter="{Binding .}" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding Name}" TextColor="White" FontAttributes="Bold" />
+                                <Label Text="{Binding Motor}" TextColor="Gray" FontAttributes="Italic" />
+                                <Label Text="{Binding Description}" TextColor="Gray" FontAttributes="Italic" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.Footer>
+                    <StackLayout>
+                        <Label Text="Footer" TextColor="White" />
+                    </StackLayout>
+                </ListView.Footer>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
